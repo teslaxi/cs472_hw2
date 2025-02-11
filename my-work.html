@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <div class="navbar">
-            <p>
-                <a class="m-2" href="index.html">About Me</a>
-                <a class="m-2" href="my-work.html">My Work</a>
-            </p>
+
+<head>
+    <title>My Work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">About Me</a>
+                <a class="nav-link active" href="my-work.html">My Work</a>
+            </div>
         </div>
-        <section class="m-3">
-            <h1>My Work</h1>
-            <p>Your content should go here!</p>
-        </section>
-    </body>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-5">My Research Projects</h1>
+
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+                <div class="project-card">
+                    <h2>Named Entity Recognition for Fintech</h2>
+                    <img src="fig/NER-in-Fintech.png" alt="NER Model Architecture Diagram" class="project-image">
+                    <p>
+                        <strong>Course Project:</strong> <em>CS181 Artificial Intelligence (Spring 2024)</em>
+                    </p>
+                    <p>
+                        This research implements two approaches for Named Entity Recognition in financial texts:
+                    </p>
+                    <ul>
+                        <li>Hidden Markov Model (HMM) implementation</li>
+                        <li>Conditional Random Field (CRF) for improved context awareness</li>
+                        <li>Comparative analysis of both approaches</li>
+                    </ul>
+                    <p>
+                        <a href="https://github.com/teslaxi/Named-entity-recognition-for-Fintech/raw/main/paper/group2_Named%20entity%20recognition%20for%20Fintech.pdf" class="btn btn-primary">Download Paper</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mb-4">
+                <div class="project-card">
+                    <h2>Weibo Interaction Prediction</h2>
+                    <img src="fig/Predicting-the-interactions-of-Weibo.png" alt="Weibo Data Analysis Visualization" class="project-image">
+                    <p>
+                        <strong>Research Focus:</strong> <em>Social Media Analytics</em>
+                    </p>
+                    <p>
+                        Predictive modeling framework for Sina Weibo engagement metrics within 24 hours of publication.
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="color:rgb(0, 10, 7)">Feature Category</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Content Characteristics</td>
+                                <td>Text analysis, multimedia elements</td>
+                            </tr>
+                            <tr>
+                                <td>Temporal Patterns</td>
+                                <td>Posting time, seasonal trends</td>
+                            </tr>
+                            <tr>
+                                <td>User Behavior</td>
+                                <td>Engagement history, follower metrics</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mb-4">
+                <div class="project-card">
+                    <h2>Life Trajectories Classification</h2>
+                    <img src="fig/Fine-grained-Classification.png" alt="Life Trajectory Visualization" class="project-image">
+                    <p>
+                        <strong>Research Area:</strong> <em>Human Dynamics Analysis</em>
+                    </p>
+                    <p>
+                        Classification system for life trajectories extracted from Wikipedia, categorizing events into 24 types.
+                    </p>
+                    <ol class="trajectory-types">
+                        <li>Educational milestones</li>
+                        <li>Career achievements</li>
+                        <li>Life events</li>
+                        <li>Historical contributions</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>

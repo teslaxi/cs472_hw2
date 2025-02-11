@@ -1,1 +1,41 @@
 /* Your CSS goes here! */
+.project-card {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+h1 {
+    color: #156fc8;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #0b84d0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.trajectory-types {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.trajectory-types li {
+    margin-bottom: 0.5rem;
+    color: #0a1e15;
+}
